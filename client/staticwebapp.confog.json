@@ -1,0 +1,17 @@
+{
+    "routes": [
+        {
+            "route": "/login",
+            "redirect":"/.aurh/login/github"
+        },
+        {
+            "route": "/logout",
+            "redirect":"/.aurh/logout"
+        }
+    ],
+    "responseOverride":{
+        "404":{
+            "redirect": "/not-found"
+        }
+    }
+}
