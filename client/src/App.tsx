@@ -1,18 +1,27 @@
-import React from "react"
-import { Button, Divider, FluentProvider, Text, Title1, webLightTheme } from "@fluentui/react-components"
+import { RouterProvider, createBrowserRouter } from "react-router-dom"
+import { Divider, FluentProvider, webLightTheme } from "@fluentui/react-components"
 import Header from "./components/header";
+import Home from "./pages/home";
+import NotFound from "./pages/not-found";
 
 function App() {
 
-  const [count, setCount] = React.useState(0);
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />
+    },
+    {
+      path: '/not-found',
+      element: <NotFound />
+    }
+  ])
 
   return (
     <FluentProvider theme={webLightTheme}>
       <Header />
       <Divider />
-      <Title1>Counter</Title1>
-      <Button onClick={() => setCount(count + 1)}>Click me</Button>
-      <Text>{count}</Text>
+      <RouterProvider router={router} />
     </FluentProvider>  
   )
 }
