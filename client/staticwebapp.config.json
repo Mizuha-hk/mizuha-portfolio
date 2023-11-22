@@ -1,0 +1,18 @@
+{
+    "trailingSlash":"auto",
+    "routes": [
+        {
+            "route": "/login",
+            "rewrite":"/.auth/login/github"
+        },
+        {
+            "route": "/logout",
+            "rewrite":"/.auth/logout"
+        }
+    ],
+    "responseOverrides":{
+        "404":{
+            "rewrite": "/not-found"
+        }
+    }
+}
