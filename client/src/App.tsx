@@ -1,8 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { Divider, FluentProvider, webLightTheme } from "@fluentui/react-components"
-import Header from "./components/header";
-import Home from "./pages/home";
-import NotFound from "./pages/not-found";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
 function App() {
 
