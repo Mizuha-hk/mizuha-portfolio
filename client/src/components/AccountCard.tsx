@@ -1,4 +1,4 @@
-import { Avatar, Body1, Button, Caption1Strong, Card, makeStyles } from "@fluentui/react-components";
+import { Avatar, Button, Caption1Strong, Card, makeStyles } from "@fluentui/react-components";
 
 const useStyles = makeStyles(
     {
@@ -22,6 +22,10 @@ const useStyles = makeStyles(
         url: {
             alignSelf: "flex-start",
         },
+        login:{
+            alignSelf: "flex-start",
+            paddingLeft: "0",
+        }
     }
 );
 
@@ -46,9 +50,13 @@ function AccountCard(args: AccountCardProps) {
                 </div>
             ) : (
                 <div className={style.flexRow}>
-                    <Avatar className={style.avatar}/>
+                    <Avatar/>
                     <div className={style.flexColumn}>
-                        <Body1>Log in</Body1>
+                        <Button
+                            className={style.login}
+                            as="a"
+                            href="/login"
+                            appearance="transparent">Log in</Button>
                     </div>
                 </div>
             )}
