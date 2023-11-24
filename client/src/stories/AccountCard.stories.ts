@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import AccountCard from "../components/AccountCard";
+import AccountCard from "../components/header/AccountCard";
 
 const meta = {
-    title: 'components/AccountCard',
+    title: 'components/header/AccountCard',
     component: AccountCard,
     tags: ['autodocs'],
     parameters: {
