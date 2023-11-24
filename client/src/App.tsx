@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import { Divider, FluentProvider, webLightTheme } from "@fluentui/react-components"
+import { Divider, FluentProvider, webDarkTheme } from "@fluentui/react-components"
 import Header from "./components/header/Header";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
@@ -18,7 +18,7 @@ function App() {
   ])
 
   return (
-    <FluentProvider theme={webLightTheme}>
+    <FluentProvider theme={webDarkTheme}>
       <Header />
       <Divider />
       <RouterProvider router={router} />

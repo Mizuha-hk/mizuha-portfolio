@@ -1,6 +1,6 @@
 import type { Decorator, Preview, StoryObj } from "@storybook/react";
 import React from "react";
-import { FluentProvider, webLightTheme } from "@fluentui/react-components";
+import { FluentProvider, webDarkTheme } from "@fluentui/react-components";
 
 const preview: Preview = {
   parameters: {
@@ -14,7 +14,7 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <FluentProvider theme={webLightTheme}>
+      <FluentProvider theme={webDarkTheme}>
         <Story />
       </FluentProvider>
     ),
