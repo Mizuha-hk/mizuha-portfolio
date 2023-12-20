@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import Header from '../components/header'
+import Header from '../components/header/Header'
 
 const meta = {
-    title: 'components/header',
+    title: 'components/header/Header',
     component: Header,
     tags: ['autodocs'],
     parameters: {

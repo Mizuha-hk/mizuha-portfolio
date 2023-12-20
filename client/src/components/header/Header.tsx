@@ -19,17 +19,19 @@ const useStyles = makeStyles(
 function Header() {
   const style = useStyles();
   return (
-    <div className={style.root}>
-      <div className={style.flexStart}>
-        <LargeTitle>Title</LargeTitle>
-        <TabList>
-          <Tab value="home">Home</Tab>
-          <Tab value="about">About</Tab>
-          <Tab value="contact">Contact</Tab>
-        </TabList>
+    <>
+      <div className={style.root}>
+        <div className={style.flexStart}>
+          <LargeTitle>Title</LargeTitle>
+          <TabList>
+            <Tab value="home">Home</Tab>
+            <Tab value="about">About</Tab>
+            <Tab value="contact">Contact</Tab>
+          </TabList>
+        </div>
+        <Button as="a" href="/login">Log in</Button>
       </div>
-      <Button as="a" href="/login">Log in</Button>
-    </div>
+    </>
   );
 }
 
